@@ -10,7 +10,8 @@ import (
 )
 
 func TestApplySingleInstance(t *testing.T) {
-	t.Parallel()
+	// Not running in parallel due to a current naming limitation for the public IP causing a conflict
+	//t.Parallel()
 
 	// Root folder where Terraform files should be (relative to the test folder)
 	rootFolder := "../"
@@ -51,7 +52,8 @@ func TestApplySingleInstance(t *testing.T) {
 }
 
 func TestApplyMultInstance(t *testing.T) {
-	t.Parallel()
+	// Not running in parallel due to a current naming limitation for the public IP causing a conflict
+	//t.Parallel()
 
 	// Root folder where Terraform files should be (relative to the test folder)
 	rootFolder := "../"
