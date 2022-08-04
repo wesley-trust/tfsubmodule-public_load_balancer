@@ -23,7 +23,7 @@ pr:
 resources:
   pipelines:
   - pipeline: Network  
-    source: 'ENV-P;latest; tfsubmodule-network'
+    source: tfsubmodule-network
     trigger:    
       stages:
       - Regression
